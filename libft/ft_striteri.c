@@ -12,6 +12,11 @@
 
 #include "./libft.h"
 
+/*
+** Applies the function f to each character in the string
+** passed in parameter by specifying its index
+*/
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;

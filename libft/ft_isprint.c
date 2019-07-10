@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Check if c is a printable character, including space
+*/
+
 int	ft_isprint(int c)
 {
 	if (c < ' ' || '~' < c)

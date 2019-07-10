@@ -24,9 +24,17 @@ OBJS =		$(SRCS:.c=.o)
 
 NAME =		fdf
 
-MLX =		-L /usr/X11/lib/ -lmlx -framework OpenGl -framework Appkit
+ifeq ($(OS),Windows_NT)
+	LIBMLX = $(MLXWIN)
+else
+	UNAME_S := $(shell uname -s)
+	ifeq ($(UNAME_S),Darwin)
+		LIBMLX = $(MLXMAC)
+	endif
+endif
 
-// MLX =		-L /usr/local/lib/ -lmlx -framework OpenGl -framework Appkit
+MLXWIN =	-L /usr/local/lib/ -lmlx -lX11.dll -lXext.dll
+MLXMAC =	-L /usr/local/lib/ -lmlx -framework OpenGL -framework Appkit
 
 CC =		clang
 
@@ -43,7 +51,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(MAKE) -C $(LIBFT)
-	@gcc $(CFLAGS) -o $(NAME) -I /usr/local/include/ $(OBJS) libft/libft.a $(MLX)
+	@gcc $(CFLAGS) -o $(NAME) -I /usr/local/include/ $(OBJS) libft/libft.a $(LIBMLX)
 	@echo "$(_GREEN)fdf compiled$(_END)"
 
 %.o: %.c

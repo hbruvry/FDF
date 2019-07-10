@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Free memory
+*/
+
 void	ft_memdel(void **ap)
 {
 	if (ap)

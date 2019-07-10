@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Examine the first n bytes of the memory area pointed by s looking for c
+*/
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;

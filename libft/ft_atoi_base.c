@@ -10,12 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Define while condition according to the chosen base
+*/
+
 static int	ft_inbase(char c, int base)
 {
 	if (base <= 10)
 		return ('0' <= c && c <= '9');
 	return (('0' <= c && c <= '9') || ('A' <= c && c <= ('A' + base - 10)));
 }
+
+/*
+** Convert a string into an integer according to its base
+*/
 
 int			ft_atoi_base(const char *str, int base)
 {

@@ -12,6 +12,12 @@
 
 #include "./libft.h"
 
+/*
+** Add the string src to the end of the dest string by overwriting
+** the null character at the end of dest, then adding a new final null character
+** it only takes into account the first n characters of src
+*/
+
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
 	size_t	i;

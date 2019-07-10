@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the number n
+*/
+
 void	ft_putnbr(int n)
 {
 	int res;

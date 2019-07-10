@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the string s ending with return according to a file descriptor
+*/
+
 void	ft_putendl_fd(char const *s, int fd)
 {
 	ft_putstr_fd(s, fd);

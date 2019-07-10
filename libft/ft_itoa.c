@@ -6,11 +6,15 @@
 /*   By: hbruvry <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/02 14:35:24 by hbruvry           #+#    #+#             */
-/*   Updated: 2018/02/20 13:13:02 by hbruvry          ###   ########.fr       */
+/*   Updated: 2018/10/15 09:28:07 by hbruvry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
+
+/*
+** Check n length
+*/
 
 static	size_t	ft_intlen(int n)
 {
@@ -28,6 +32,10 @@ static	size_t	ft_intlen(int n)
 	}
 	return (i);
 }
+
+/*
+** Convert an integer into a string
+*/
 
 char			*ft_itoa(int n)
 {

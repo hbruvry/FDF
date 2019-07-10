@@ -12,15 +12,17 @@
 
 #include "./libft.h"
 
+/*
+** Fills the first n bytes of the memory area pointed to by s with byte c
+*/
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
 	unsigned char	*pb;
-	unsigned char	pc;
 
 	i = 0;
 	pb = (unsigned char*)b;
-	pc = (unsigned char)c;
 	while (i < len)
 	{
 		pb[i] = c;

@@ -36,6 +36,10 @@ char	*ft_getres(int i, int neg, int *itoa)
 	return (str);
 }
 
+/*
+** Convert an integer into a string according to its base
+*/
+
 char	*ft_itoa_base(int n, int base)
 {
 	int			i;

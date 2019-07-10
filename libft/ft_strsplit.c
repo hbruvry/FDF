@@ -12,7 +12,11 @@
 
 #include "libft.h"
 
-static char	*lenword(char const *s, char c)
+/*
+** Malloc a word resulting from the cutting of s according to the character c
+*/
+
+static char	*ft_mallocword(char const *s, char c)
 {
 	int		i;
 	char	*temp;
@@ -32,7 +36,11 @@ static char	*lenword(char const *s, char c)
 	return (temp);
 }
 
-static int	nbword(char const *s, char c)
+/*
+** Count each words resulting from the cutting of s according to the character c
+*/
+
+static int	ft_countwords(char const *s, char c)
 {
 	int		word;
 	int		i;
@@ -52,6 +60,11 @@ static int	nbword(char const *s, char c)
 	return (word);
 }
 
+/*
+** Returns an array of new strings, the table
+** resulting from the cutting of s according to the character c
+*/
+
 char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
@@ -60,14 +73,14 @@ char		**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	if (!(tab = malloc(sizeof(char *) * (nbword(s, c) + 1))))
+	if (!(tab = malloc(sizeof(char *) * (ft_countwords(s, c) + 1))))
 		return (NULL);
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
 			i++;
 		if (s[i] != '\0')
-			tab[j++] = lenword(&s[i], c);
+			tab[j++] = ft_mallocword(&s[i], c);
 		while (s[i] && s[i] != c)
 			i++;
 	}

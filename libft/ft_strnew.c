@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Malloc a new string
+*/
+
 char	*ft_strnew(size_t size)
 {
 	char	*str;

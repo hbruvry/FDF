@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Free string memory
+*/
+
 void	ft_strdel(char **as)
 {
 	void	**pas;

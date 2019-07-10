@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Compare the two strings s1 and s2
+*/
+
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	size_t			i;

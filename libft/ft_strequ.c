@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Check if s1 is the same as s2
+*/
+
 int	ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 != NULL && s2 != NULL)

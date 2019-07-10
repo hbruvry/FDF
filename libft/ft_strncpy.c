@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Copy the first n bytes of src in the string pointed to by dst
+*/
+
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
 	size_t	i;

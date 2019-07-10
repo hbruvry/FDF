@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Sets to 0 the first n bytes of the block pointed to by s
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);

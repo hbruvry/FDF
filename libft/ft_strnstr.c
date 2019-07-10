@@ -12,6 +12,11 @@
 
 #include "./libft.h"
 
+/*
+** Look for the first occurrence of little substring
+** in the len first characters of big string
+*/
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;

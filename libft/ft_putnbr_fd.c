@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the number n according to a file descriptor
+*/
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	int res;

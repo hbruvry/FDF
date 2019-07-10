@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Join the string src to the end of the dest string
+*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*sjoin;

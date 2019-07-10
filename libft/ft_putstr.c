@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the string s
+*/
+
 void	ft_putstr(char const *s)
 {
 	size_t	i;

@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Malloc memory occording to size
+*/
+
 void	*ft_memalloc(size_t size)
 {
 	void *mem;

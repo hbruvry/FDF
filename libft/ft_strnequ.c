@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Check of the n first characters of s1 and s2 are the same
+*/
+
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	if (s1 != NULL && s2 != NULL)

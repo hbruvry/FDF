@@ -12,14 +12,17 @@
 
 #include "./libft.h"
 
+/*
+** Applies the function f to each character in the string passed
+** in parameter by specifying its index for create a new string
+*/
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
-	int		ls;
 	char	*ps;
 
 	i = 0;
-	ls = 0;
 	ps = NULL;
 	if (s != NULL && f != NULL)
 	{

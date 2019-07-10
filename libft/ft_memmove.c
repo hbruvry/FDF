@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Copy n bytes from the memory area src to the memory area dst
+*/
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*pdst;

@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the string s according to a file descriptor
+*/
+
 void	ft_putstr_fd(char const *s, int fd)
 {
 	size_t	i;

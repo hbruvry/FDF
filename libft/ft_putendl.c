@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Write the string s ending with return
+*/
+
 void	ft_putendl(char const *s)
 {
 	ft_putstr(s);

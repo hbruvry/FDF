@@ -12,6 +12,10 @@
 
 #include "./libft.h"
 
+/*
+** Check if c is an alphabetic character or a number (0 to 9)
+*/
+
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))

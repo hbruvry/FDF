@@ -1,4 +1,4 @@
-# FDF @42
+# FDF (@42)
 Simplified 3D graphic representation of a relief landcape (123/100)
 
 ## Objectives

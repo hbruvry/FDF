@@ -8,7 +8,7 @@ Simplified 3D graphic representation of a relief landcape (123/100)
 
 ## Skills
 - Rigor
-- Algorithms
+- Simple mathematics
 - Graphics
 
 ## Result

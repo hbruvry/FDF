@@ -1,5 +1,5 @@
 # FDF @42
-Simplified 3D graphic representation of a relief landcape 
+Simplified 3D graphic representation of a relief landcape (123/100)
 
 ## Objectives
 - Computing 2D coordinates of a 3D point
